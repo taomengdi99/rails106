@@ -5,6 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts '建立一个账号'
+u = User.new
+u.email = 'admin@test.com'
+u.password = '111111'
+u.password_confirmation = '111111'
+u.save
+
 puts '建立四个groups'
 Group.create!(title: '天天用英语社群', description:'这里每天都要学习英语')
 Group.create!(title: '原则 英语原版书阅读', description:'	prinsiples，你值得阅读')
