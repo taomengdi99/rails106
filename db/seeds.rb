@@ -31,3 +31,8 @@ Post.create!(content: '精读英文原版书！', group_id:'2', user_id:'1')
 Post.create!(content: '践行！', group_id:'3', user_id:'2')
 Post.create!(content: '按摩！', group_id:'4', user_id:'2')
 Post.create!(content: '的莫！', group_id:'5', user_id:'1')
+
+puts '第一个group多建立一些posts'
+creat_posts = for i in 1...9 do
+  Post.create!([content:'Post no.#{i}',group_id:'1', user_id:'1'])
+end
