@@ -34,5 +34,5 @@ Post.create!(content: '的莫！', group_id:'5', user_id:'1')
 
 puts '第一个group多建立一些posts'
 creat_posts = for i in 1...9 do
-  Post.create!([content:'Post no.#{i}',group_id:'1', user_id:'1'])
+  Post.create!([content:'Post no. #{i}',group_id:'1', user_id:'1'])
 end
